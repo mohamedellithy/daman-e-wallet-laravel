@@ -1,0 +1,143 @@
+body:not(.layout-fixed) .main-sidebar {
+    background-color: white;
+}
+
+.nav-pills .nav-link {
+    color: #0f1113;
+}
+
+.nav-pills .nav-link {
+    color: #0f1113 !important;
+    font-size: 16px;
+}
+
+.elevation-4 {
+    box-shadow: 2px 4px 4px 2px #eee !important;
+}
+
+.nav-pills .nav-link i {
+    color: orange;
+    font-size: 21px;
+}
+
+.brand-link {
+    border-bottom: 1px solid #d7d9dc !important;
+    color: rgb(255 203 123) !important;
+}
+
+.card {
+    border: 0px !important;
+    box-shadow: none !important;
+}
+
+.card-header {
+    background-color: white !important
+}
+
+button.dt-button {
+    background: orange !IMPORTANT;
+    border: 1px solid orange !important;
+    color: #2f2f2f;
+}
+
+.navbar-expand {
+    direction: rtl !important;
+}
+
+body:not(.layout-fixed) .main-sidebar {
+    right: 0;
+}
+
+.nav-sidebar>.nav-item {
+    direction: rtl;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.table.dataTable {
+    direction: rtl;
+}
+
+.content-wrapper {
+    border: 0px solid white;
+    border-radius: 0px;
+    background-color: #eeeeee;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active,
+.sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #eeeeee;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active,
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:focus,
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:hover {
+    background-color: rgb(244 227 227) !important;
+}
+
+.title-excerpt {
+    background-color: #feeed1;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.content-excerpt {
+    background-color: #eee;
+    padding: 10px;
+}
+
+.main-sidebar,
+.main-sidebar::before {
+    border-left: 10px solid #eee;
+}
+
+.sidebar {
+    overflow-y: visible !important;
+}
+
+.single-sect.fa-user {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 28px;
+    margin: 0px 0px 0px 10px;
+}
+
+.bg-secondary {
+    background-color: #212529 !important;
+}
+
+.row-statics {
+    padding: 20px 0px;
+    border-bottom: 2px solid #ffa500;
+}
+
+.card-success.card-outline {
+    border-top: 3px solid #28a745 !important;
+}
+
+.card-success.card-outline .card-body {
+    border: 23px solid #eee !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    direction: rtl;
+    border-radius: 0px;
+    border: 2px dashed #d6d1d1;
+}
+
+.nav-pills .nav-treeview .nav-link {
+    padding-right: 40px;
+}
+
+.nav-pills .nav-treeview .nav-link i {
+    font-size: 13px;
+}
+
+.nav-pills .nav-treeview .nav-link p {
+    font-size: 15px;
+}

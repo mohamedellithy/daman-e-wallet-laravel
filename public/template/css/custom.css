@@ -1,0 +1,450 @@
+/* *****************************************************
+
+    ** Custom Stylesheet **
+
+    Any custom styling you want to apply should be
+    defined here.
+
+***************************************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+body,
+.btn,
+.golink,
+.nav-menu .main-menu a.v-active,
+* :not(i) {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.sec-main {
+    border-radius: 0px;
+}
+
+.invalid-feedback {
+    display: block !important;
+}
+
+.is-invalid {
+    border: 1px solid red !important;
+}
+
+.btn {
+    padding: 14px 14px;
+}
+
+.tabs-item.active tr th,
+.tabs-item.active tr td {
+    font-weight: 200 !important;
+}
+
+.tabs-item.active tr th {
+    color: #e91e63;
+}
+
+.btn-default-green-fill {
+    color: #ffffff !important;
+    border-color: #8bc34a !important;
+    background-color: #8bc34a !important;
+    font-size: 14px !important;
+    padding: 12px 15px !important;
+    margin-top: 0rem!important;
+}
+
+.title-heading {
+    text-align: right !important;
+}
+
+.panel-title ul li {
+    display: inline-block !important;
+    padding: 7px 32px !important;
+    border-radius: 10px !important;
+    font-size: 18px;
+}
+
+.panel-title ul {
+    display: inline-block;
+}
+
+.btn.fa-plus,
+.btn.fa-minus {
+    padding: 12px 15px !important;
+}
+
+.btn.fa-plus::before,
+.btn.fa-minus::before {
+    display: none !important;
+}
+
+
+/****************************************************************************/
+
+.btn_round {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn_round:hover {
+    color: #fff;
+    background: #6b4acc;
+    border: 1px solid #6b4acc;
+}
+
+.btn_content_outer {
+    display: inline-block;
+    width: 85%;
+}
+
+.close_c_btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #ededed;
+    border: 1px solid #ccc;
+    color: #ff5c5c;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add_icon {
+    padding: 10px;
+    border: 1px dashed #aaa;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.add_group_btn {
+    display: flex;
+}
+
+.add_group_btn i {
+    font-size: 32px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.add_group_btn span {
+    margin-top: 8px;
+}
+
+.add_group_btn,
+.clone_sub_task {
+    cursor: pointer;
+}
+
+.sub_task_append_area .custom_square {
+    cursor: move;
+}
+
+.del_btn_d {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.input-details-order {
+    display: inline-table !important;
+    margin: 10px;
+}
+
+.input-details-order input {
+    padding: 10px 17px;
+}
+
+.form-container-inputs {
+    background-color: #efefef;
+    padding: 12px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#containers-orders {
+    position: relative;
+}
+
+.btn-delete {
+    position: absolute !important;
+    top: 13px;
+    left: 13px;
+    color: #e22929;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-clone {
+    position: absolute !important;
+    top: 13px;
+    left: 13px;
+    color: #4caf50;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.ordersummary .table-responsive-lg {
+    height: 164px;
+    overflow: auto;
+}
+
+
+/****************************************************************************/
+
+.badge {
+    display: inline-block;
+    padding: 0.65em 0.8em;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.panel-title ul {
+    text-align: right;
+    direction: rtl;
+    margin: 10px 0px;
+    width: 85%;
+    max-width: 85%;
+    min-width: 85%;
+    padding: 0px;
+}
+
+.orders-list td {
+    width: 30%;
+    padding: 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #c0b7b7;
+    font-size: 18px;
+}
+
+.heading-list td {
+    padding: 15px;
+    text-align: right;
+}
+
+.accordion.faq .panel-title {
+    border-bottom: solid 2px #e4e3e3;
+}
+
+.wrap-blog .sec-normal {
+    padding: 80px 0px 0px !important;
+}
+
+.help .help-container {
+    margin-top: 0px !important;
+    border-radius: 0px !important;
+}
+
+svg #svg-ico {
+    fill: #2e7d32 !important;
+}
+
+.menu-wrap {
+    background-color: #e4e0e0;
+}
+
+.fullrock {
+    padding: 0px 0px;
+    position: relative;
+}
+
+.fullrock .svg.logo-menu {
+    position: relative;
+    top: -7px;
+}
+
+.toplang {
+    top: 144px;
+}
+
+.fullrock-content {
+    transform: translate(-50%, 27%) !important;
+}
+
+
+/** ******************************************************************************************* **/
+
+
+/* .nav-menu .main-menu .menu-item {
+    padding: 0px 11px !important;
+} */
+
+.nav-menu .main-menu a.v-stroke {
+    padding: 9px 16px 5px 16px;
+    color: #373737;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
+.circle-section {
+    margin-top: 50px;
+}
+
+.nav-menu .main-menu a {
+    margin-left: 13px;
+}
+
+#nav-toggle {
+    position: absolute;
+}
+
+.menu-wrap {
+    padding: 20px 0px 8px 0px;
+}
+
+.nav-menu .navigation {
+    padding-top: 0px;
+}
+
+.nav-menu .main-menu a.v-stroke:before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 4px;
+    height: 0px;
+    background: #fdd700;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-menu .main-menu a.v-active {
+    padding: 8px 10px;
+    background-color: #ee5586;
+    border-radius: 6px;
+    color: #f5f3f3;
+}
+
+.nav-menu .menu-toggle {
+    left: 0px;
+    right: auto;
+}
+
+.menu-wrap.active .menu-toggle {
+    right: auto !important;
+}
+
+.menu-wrap #nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    height: 4px;
+    width: 80%;
+    background: #cb1777;
+}
+
+.btn-default-yellow-fill {
+    width: 70% !important;
+}
+
+.menu-item a .question {
+    width: 100% !important;
+}
+
+.edit-payment[data-v-f769c720] {
+    padding: 2px 11px !important;
+    font-size: 12px;
+}
+
+.blog .wrap-blog .wrapper {
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+
+form .btn-default-yellow-fill {
+    width: auto !important;
+}
+
+.seletedLang {
+    background-color: #fdd700 !important;
+    color: white !important;
+}
+
+.btn-default-yellow-fill {
+    font-weight: bold !important;
+}
+
+.circle-section .circle-wrapper p {
+    font-size: 16px;
+}
+
+.circle-section .btn-default-yellow-fill {
+    font-size: 17px;
+}
+
+.lang a {
+    color: black !important;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+@media (max-width: 767px) {
+    .nav-menu .main-menu .menu-item>a {
+        font-size: 15px;
+    }
+    .nav-menu .main-menu a.v-stroke {
+        color: #496b79;
+    }
+    .nav-menu .main-menu a.v-active {
+        color: #f5f3f3;
+    }
+    .row .model-alert-btn {
+        direction: rtl;
+        text-align: center !important;
+    }
+    button.alert-model-payments {
+        width: auto !important;
+        padding: 7px !important;
+        font-size: 12px !important;
+        margin: 15px 0px;
+    }
+    .section-heading {
+        font-size: 20px;
+        padding: 23px 0px 0px;
+    }
+    .section-subheading {
+        font-size: 13px;
+    }
+    .panel-title ul {
+        display: block !important;
+    }
+    .panel-title ul li {
+        display: block !important;
+    }
+    .panel-collapse .wrapper-collapse {
+        display: block !important;
+    }
+    .accordion.faq .panel-title .fa-plus {
+        z-index: 10000;
+    }
+    .accordion.faq .panel-title .fa-minus {
+        z-index: 10000;
+    }
+    .menu-wrap.mobile {
+        background: #15212a;
+    }
+}

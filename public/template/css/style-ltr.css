@@ -1,0 +1,148 @@
+body {
+    direction: ltr;
+}
+
+.section-heading,
+.section-subheading {
+    text-align: left !important;
+}
+
+.text-left {
+    text-align: left !important
+}
+
+.toplang {
+    right: 15px !important;
+    left: auto !important;
+}
+
+.nav-menu .main-menu>.menu-item {
+    float: right;
+}
+
+.nav-menu .main-menu a.v-stroke {
+    padding: 9px 11px 5px 5px;
+}
+
+.nav-menu .main-menu a {
+    margin-left: 0px;
+}
+
+.btn-default-yellow-fill {
+    width: 73% !important;
+}
+
+.news {
+    text-align: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.sec-main .model-alert-btn {
+    text-align: right !important;
+}
+
+.title-heading {
+    text-align: left !important;
+}
+
+.section-heading {
+    font-size: 27px;
+}
+
+.panel-title ul {
+    text-align: left;
+    direction: ltr;
+}
+
+.panel-title ul {
+    display: inline !important;
+    justify-content: left;
+}
+
+.list th,
+.list td {
+    text-align: left !important;
+}
+
+.accordion.faq .panel-title {
+    display: flex;
+}
+
+.fullrock a {
+    line-height: 18px;
+}
+
+.others-info .order-btns a.btn {
+    padding: 5px 6px !important;
+}
+
+.help .help-item:before {
+    left: 28% !important;
+}
+
+.blog .wrap-blog {
+    text-align: left !important;
+}
+
+#sidebar {
+    text-align: left !important;
+}
+
+.included ul {
+    padding-left: 0px;
+}
+
+.cd-filter-block .cd-select::after,
+.cd-filter-block label i,
+.btn-clone,
+.btn-delete {
+    right: 30px !important;
+    left: auto;
+}
+
+.panel-title.withdraw-tables ul li,
+.panel-title.tickets-tables ul li {
+    padding: 7px 20px !important;
+}
+
+.panel-title.tickets-tables ul li {
+    padding: 7px 13px !important;
+}
+
+.tickets-pannel .order-btns a.btn {
+    padding: 11px 0px !important;
+    font-size: 16px !important;
+}
+
+.nav-menu .menu-toggle {
+    right: 28px;
+    left: auto;
+}
+
+.sec-main .model-alert-btn {
+    text-align: left !important;
+}
+
+@media (max-width: 767px) {
+    button.alert-model-payments {
+        margin: 15px 28px;
+    }
+    .panel-title ul {
+        width: 70%;
+        max-width: 70%;
+        min-width: 70%;
+    }
+    .btn.fa-plus,
+    .btn.fa-minus {
+        padding: 5px 16px !important;
+    }
+    .tickets-pannel .order-btns a.btn {
+        padding: 11px 10px !important;
+    }
+    .toplang {
+        top: 100px;
+    }
+}
