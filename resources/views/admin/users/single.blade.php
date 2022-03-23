@@ -20,11 +20,10 @@
                 <div class="card-footer">
 
                     <ul class="row items-balance-list">
-                        <li>Payer Email :     {{ '#' }}</li>
-                        <li>Payee Email :     {{ '#' }}</li>
-                        <li>Payment Value :   {{ '#' }} </li>
-                        <li>Status Payment : {{ '#' }}</li>
-                        <li>Status Payment : {{ '#' }}</li>
+                        <li>البريد الالكترونى الدافع :     {{ '#' }}</li>
+                        <li>البريد الالكترونى المستلم :     {{ '#' }}</li>
+                        <li>قيمة المدفوعات :   {{ '#' }} </li>
+                        <li>حالة المدفوعات : {{ '#' }}</li>
 
                     </ul>
                 <!-- /.row -->
@@ -39,37 +38,37 @@
 
                          <!-- Color Picker -->
                          <div class="form-group">
-                            <label>First Name</label>
+                            <label>الاسم الاول</label>
                             <input type="text" value="{{ $user->firstname ?? null }}" class="form-control my-colorpicker1 colorpicker-element" data-colorpicker-id="1" data-original-title="" title="" readonly>
                         </div>
 
                          <!-- Color Picker -->
                          <div class="form-group">
-                            <label>Last Name</label>
+                            <label>الاسم الثانى</label>
                             <input type="text" value="{{ $user->lastname ?? null }}" class="form-control my-colorpicker1 colorpicker-element" data-colorpicker-id="1" data-original-title="" title="" readonly>
                         </div>
 
                          <!-- Color Picker -->
                          <div class="form-group">
-                            <label>Username</label>
+                            <label>اسم المستخدم</label>
                             <input type="text" value="{{ $user->username ?? null }}" class="form-control my-colorpicker1 colorpicker-element" data-colorpicker-id="1" data-original-title="" title="" readonly>
                         </div>
 
                          <!-- Color Picker -->
                          <div class="form-group">
-                            <label>Email</label>
+                            <label>البريد الالكترونى</label>
                             <input type="text" value="{{ $user->email ?? null }}" class="form-control my-colorpicker1 colorpicker-element" data-colorpicker-id="1" data-original-title="" title="" readonly>
                         </div>
 
                          <!-- Color Picker -->
                          <div class="form-group">
-                            <label>country</label>
+                            <label>الدولة</label>
                             <input type="text" value="{{ $user->country ?? null }}" class="form-control my-colorpicker1 colorpicker-element" data-colorpicker-id="1" data-original-title="" title="" readonly>
                         </div>
 
                         <!-- Color Picker -->
                         <div class="form-group">
-                            <label>phone</label>
+                            <label>رقم الجوال</label>
                             <input type="text" value="{{ $user->phone ?? null }}" class="form-control my-colorpicker1 colorpicker-element" data-colorpicker-id="1" data-original-title="" title="" readonly>
                         </div>
                         <!-- /.form group -->

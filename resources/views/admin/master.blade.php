@@ -42,6 +42,7 @@
 @section('css')
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6a0783bcfd.js" crossorigin="anonymous"></script>
     @yield('styles_content')
     <link rel="stylesheet" href="{{ asset('template/admin/css/Adminlte-rtl.css') }}">
     <link rel="stylesheet" href="{{ asset('template/admin/css/admin_custom.css') }}">
@@ -51,6 +52,7 @@
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
     <script> console.log('Hi!'); </script>
+    
 
     @yield('scripts_content')
 @stop

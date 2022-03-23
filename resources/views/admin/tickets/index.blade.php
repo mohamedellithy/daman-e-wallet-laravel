@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('content_header')
-    <h1>Support Tickets </h1>
+    <h1>تذاكر الدعم الفنى</h1>
 @stop
 @section('content_page')
     <div class="col-sm-12 col-md-12">

@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('content_header')
-    <h1>Payments </h1>
+    <h1>طلبات الدفع </h1>
 @stop
 @section('content_page')
     <div class="col-sm-12 col-md-12">

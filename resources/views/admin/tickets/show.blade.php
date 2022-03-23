@@ -1,19 +1,19 @@
 @extends('admin.master')
 @section('content_header')
-    <h1>Tickets </h1>
+    <h1>تذاكر الدعم الفنى </h1>
 @stop
 @section('page_title')
     @if($tickets[0]->status == 0)
-        <a href="{{ url('admin/support-tickets/status/'.$tickets[0]->ticket_id.'/1') }}" class="btn btn-danger btn-sm">Close Ticket</a>
+        <a href="{{ url('admin/support-tickets/status/'.$tickets[0]->ticket_id.'/1') }}" class="btn btn-danger btn-sm">اغلاق التذكرة</a>
     @else
-        <a href="{{ url('admin/support-tickets/status/'.$tickets[0]->ticket_id.'/0') }}" class="btn btn-success btn-sm">Re-open Ticket</a>
+        <a href="{{ url('admin/support-tickets/status/'.$tickets[0]->ticket_id.'/0') }}" class="btn btn-success btn-sm">اعادة فتح التذكرة</a>
     @endif
 @endsection
 @section('content_page')
     <div class="col-md-8 container-data">
         <div class="box box-solid">
             <div class="box-header with-border">
-                <h5 class="box-title">Ticket no #{{ $ticket_no }}</h5>
+                <h5 class="box-title">رقم التذكرة #{{ $ticket_no }}</h5>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -25,7 +25,7 @@
                         <textarea class="form-control write-replay-ticket" name="ticket" rows="5" cols="10">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eos exercitationem distinctio. Corporis ipsa eligendi ratione voluptate? At sunt harum maxime cum. Excepturi magnam nostrum id dolores facilis, quaerat vel.
                         </textarea>
-                        <button type="submit" class="btn btn-success">replay on ticket</button>
+                        <button type="submit" class="btn btn-success">الرد على التذكرة</button>
                     </form>
                 </div>
                 @forelse($tickets as $ticket)
@@ -52,7 +52,7 @@
         <div class="card card-widget widget-user shadow">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-secondary">
-                <h3 class="widget-user-username">Member</h3>
+                <h3 class="widget-user-username">العضو</h3>
             </div>
             <div class="widget-user-image">
                 <img class="img-circle elevation-2" src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" alt="User Avatar">
@@ -61,17 +61,16 @@
                 <div class="row row-statics">
                     <h6 class="block widget-user-username">{{ $tickets[0] ? $tickets[0]->users->username : 'no-found'  }}</h6>
                     <p class="block widget-user-desc">{{ $tickets[0] ? $tickets[0]->users->email : 'no-found'  }}</p>
-                    <a href="{{ url('admin/users/'.($tickets[0] ? $tickets[0]->users->id : '#')) }}" class="btn btn-info">Details Member</a>
-                    <a href="{{ url('admin/payments/'.($tickets[0] ? $tickets[0]->payments->id : '#')) }}" class="btn btn-info">Payment Details</a>
+                    <a href="{{ url('admin/users/'.($tickets[0] ? $tickets[0]->users->id : '#')) }}" class="btn btn-info">تفاصيل العضو</a>
+                    <a href="{{ url('admin/payments/'.($tickets[0] ? $tickets[0]->payments->id : '#')) }}" class="btn btn-info">تفاصيل الفاتورة</a>
                 <!-- /.col -->
                 </div>
                 <ul class="row items-balance-list">
-                    <li>Payer Email :     {{ ($tickets[0] ? $tickets[0]->payments->payer_id : '#') }}</li>
-                    <li>Payee Email :     {{ ($tickets[0] ? $tickets[0]->payments->payee_email : '#') }}</li>
-                    <li>Payment Value :   {{ ($tickets[0] ? $tickets[0]->payments->value.' '.$tickets[0]->payments->currency : '#') }} </li>
-                    <li>Status Payment : {{ ($tickets[0] ? $tickets[0]->payments->status_text : '#') }}</li>
-                    <li>Status Payment : {{ ($tickets[0] ? $tickets[0]->payments->created_at : '#') }}</li>
-                    
+                    <li>البريد الالكترونى الدافع :     {{ ($tickets[0] ? $tickets[0]->payments->payer_id : '#') }}</li>
+                    <li>البريد الالكترونى المستلم:     {{ ($tickets[0] ? $tickets[0]->payments->payee_email : '#') }}</li>
+                    <li>قيمة المدفوعات :   {{ ($tickets[0] ? $tickets[0]->payments->value.' '.$tickets[0]->payments->currency : '#') }} </li>
+                    <li>حالة الطلب : {{ ($tickets[0] ? $tickets[0]->payments->status_text : '#') }}</li>
+                   
                 </ul>
                 <!-- /.row -->
             </div>

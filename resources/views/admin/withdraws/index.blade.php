@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('content_header')
-    <h1>Withdraws</h1>
+    <h1>طلبات السحب</h1>
 @stop
 @section('content_page')
     <div class="col-sm-12 col-md-12">

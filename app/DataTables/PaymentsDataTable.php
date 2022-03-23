@@ -33,7 +33,7 @@ class PaymentsDataTable extends DataTable
                 return $row->currency ?? null;
             })
             ->addColumn('payment_link',function($row){
-                return $row->payment_link ? '<a class="btn btn-sm btn-warning" href="'.$row->payment_link.'">Link</a>' : null;
+                return $row->payment_link ? '<a class="btn btn-sm btn-warning" href="'.$row->payment_link.'">رابط الفاتورة</a>' : null;
             })
             ->addColumn('status_payment',function($row){
                 return $row->status ? '<span class="badge bg-success">'.$row->status_text.'</span>' :null;
@@ -42,7 +42,7 @@ class PaymentsDataTable extends DataTable
                 return $row->created_at;
             })
             ->addColumn('action', function($row){
-                return '<a class="btn btn-sm btn-info" href="'.url('admin/payments/'.$row->id).'">Details</a>';
+                return '<a class="btn btn-sm btn-info" href="'.url('admin/payments/'.$row->id).'">تفاصيل الفاتورة</a>';
             });
     }
 
@@ -72,11 +72,10 @@ class PaymentsDataTable extends DataTable
                     ->dom('Bfrtip')
                     ->orderBy(1)
                     ->buttons(
-                        Button::make('create'),
-                        Button::make('export'),
-                        Button::make('print'),
-                        Button::make('reset'),
-                        Button::make('reload')
+                        Button::make('export')->text('تصدير جدول'),
+                        Button::make('print')->text('طباعة الجدول'),
+                        Button::make('reset')->text('اعادة تحميل الجدول'),
+                        'colvis'
                     );
     }
 
@@ -89,14 +88,14 @@ class PaymentsDataTable extends DataTable
     {
         return [
             Column::make('id'),
-            Column::make('payer'),
-            Column::make('payee'),
-            Column::make('payment_value'),
-            Column::make('currency'),
-            Column::make('payment_link'),
-            Column::make('status_payment'),
-            Column::make('created_at'),
-            Column::computed('action')
+            Column::make('payer')->title('الدافع'),
+            Column::make('payee')->title('مستلم الدفع'),
+            Column::make('payment_value')->title('قيمة الفاتورة'),
+            Column::make('currency')->title('العملة'),
+            Column::make('payment_link')->title('رابط فاتورة الدفع'),
+            Column::make('status_payment')->title('حالة الفاتورة'),
+            Column::make('created_at')->title('تاريخ الانشاء'),
+            Column::computed('action')->title('')
                   ->exportable(false)
                   ->printable(false)
                   ->width(60)

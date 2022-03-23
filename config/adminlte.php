@@ -238,51 +238,51 @@ return [
 
         // Sidebar items:
         [
-            'text'    => 'users',
+            'text'    => 'المستخدمين',
             'icon'    => 'fas fa-fw fa-user',
             'submenu' => [
                 [
-                    'text' => 'all users',
+                    'text' => 'عرض المستخدمين',
                     'url'  => 'admin/users',
                 ]
             ],
         ],
         [
-            'text'    => 'payments orders',
-            'icon'    => 'fas fa-fw fa-user',
+            'text'    => 'طلبات الدفع',
+            'icon'    => 'fa fa-money',
             'submenu' => [
                 [
-                    'text' => 'all payments',
+                    'text' => 'كل طلبات الدفع',
                     'url'  => 'admin/payments',
                 ]
             ],
         ],
         [
-            'text'    => 'withdraw orders',
-            'icon'    => 'fas fa-fw fa-user',
+            'text'    => 'طلبات سحب الرصيد',
+            'icon'    => 'fa fa-database',
             'submenu' => [
                 [
-                    'text' => 'all withdraws',
+                    'text' => 'كل طلبات السحب',
                     'url'  => 'admin/withdraws',
                 ]
             ],
         ],
         [
-            'text'    => 'Charge wallet orders',
-            'icon'    => 'fas fa-fw fa-user',
+            'text'    => 'طلبات شحن المحفظة',
+            'icon'    => 'fa fa-credit-card',
             'submenu' => [
                 [
-                    'text' => 'all orders',
+                    'text' => 'كل طلبات شحن المحفظات',
                     'url'  => 'admin/charge-wallets',
                 ]
             ],
         ],
         [
-            'text'    => 'Tickets',
-            'icon'    => 'fas fa-fw fa-user',
+            'text'    => 'تذاكر الدعم الفني',
+            'icon'    => 'fa fa-ticket',
             'submenu' => [
                 [
-                    'text' => 'all Tickets',
+                    'text' => 'كل تذاكر الدعم الفنى',
                     'url'  => 'admin/tickets',
                 ]
             ],

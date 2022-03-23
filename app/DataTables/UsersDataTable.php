@@ -64,10 +64,9 @@ class UsersDataTable extends DataTable
                     ->dom('Blfrtip')
                     ->orderBy(1)
                     ->buttons(
-                        Button::make('export')->columns(':visible'),
-                        Button::make('print')->columns('visible'),
-                        Button::make('reset'),
-                        Button::make('reload'),
+                        Button::make('export')->text('تصدير جدول'),
+                        Button::make('print')->text('طباعة الجدول'),
+                        Button::make('reset')->text('اعادة تحميل الجدول'),
                         'colvis'
                     );
     }

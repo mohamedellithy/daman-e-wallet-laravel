@@ -72,11 +72,10 @@ class TicketSupportDataTable extends DataTable
                     ->dom('Bfrtip')
                     ->orderBy(1)
                     ->buttons(
-                        Button::make('create'),
-                        Button::make('export'),
-                        Button::make('print'),
-                        Button::make('reset'),
-                        Button::make('reload')
+                        Button::make('export')->text('تصدير جدول'),
+                        Button::make('print')->text('طباعة الجدول'),
+                        Button::make('reset')->text('اعادة تحميل الجدول'),
+                        'colvis'
                     );
     }
 

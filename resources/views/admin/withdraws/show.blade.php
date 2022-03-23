@@ -1,11 +1,11 @@
 @extends('admin.master')
 @section('content_header')
-    <h1>Payments </h1>
+    <h1>طلبات السحب </h1>
 @stop
 @section('page_title')
     @if($withdraw->status == 0)
-        <a href="{{ url('admin/update-withdraw-status/'.$withdraw->id.'/2') }}" class="btn btn-danger btn-sm">Cancel Order</a>
-        <a href="{{ url('admin/update-withdraw-status/'.$withdraw->id.'/1') }}" class="btn btn-success btn-sm">Accept Order</a>
+        <a href="{{ url('admin/update-withdraw-status/'.$withdraw->id.'/2') }}" class="btn btn-danger btn-sm">الغاء الطلب</a>
+        <a href="{{ url('admin/update-withdraw-status/'.$withdraw->id.'/1') }}" class="btn btn-success btn-sm">موافقة على الطلب</a>
     @else
         <label class="status-info"> {{ $withdraw->status_text ?? '-' }} </label>
     @endif
@@ -14,28 +14,28 @@
     <div class="col-md-8 container-data">
         <div class="box box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title">Payment Details</h3>
+                <h3 class="box-title">تفاصيل طلب السحب</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                <label>withdraw account</label>
+                <label>حساب طلبات السحب</label>
                 <p class="text-green item-pa">
                     {{ $withdraw->withdraw_account ?? 'no-found' }}
                 </p>
 
-                <label>withdraw value</label>
+                <label>قيمة المدفوعات</label>
                 <p class="text-aqua item-pa"> {{ $withdraw->value ?? 'no-found' }}</p>
 
-                <label>status withdraw</label>
+                <label>حالة طلب السحب</label>
                 <p class="text-yellow item-pa">{{ $withdraw->status_text }}</p>
 
-                <label>withdraw date</label>
+                <label>تاريخ السحب</label>
                 <p class="text-muted item-pa">{{ $withdraw->created_at }}</p>
 
-                <label>withdraw notice</label>
+                <label>ملاحظات على طلب السحب</label>
                 <p class="text-muted item-pa">{{ $withdraw->notice }}</p>
 
-                <label>withdraw type</label>
+                <label>نوع السحب</label>
                 <p class="text-muted item-pa">{{ $withdraw->withdraw_type }}</p>
             </div>
         <!-- /.box-body -->
@@ -48,7 +48,7 @@
         <div class="card card-widget widget-user shadow">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-secondary">
-                <h3 class="widget-user-username">Member</h3>
+                <h3 class="widget-user-username">عضو</h3>
             </div>
             <div class="widget-user-image">
                 <img class="img-circle elevation-2" src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" alt="User Avatar">
@@ -57,14 +57,14 @@
                 <div class="row row-statics">
                     <h6 class="block widget-user-username">{{ $withdraw->user->username ?? 'no-found' }}</h6>
                     <p class="block widget-user-desc">{{ $withdraw->user->email ?? 'no-found'  }}</p>
-                    <a href="{{ url('admin/users/'.$withdraw->user->id) }}" class="btn btn-info">Details Member</a>
+                    <a href="{{ url('admin/users/'.$withdraw->user->id) }}" class="btn btn-info">تفاصيل العضو</a>
                 <!-- /.col -->
                 </div>
                 <ul class="row items-balance-list">
-                    <li>Balance : 1220 USD </li>
-                    <li>Withdraw : 233 USD</li>
-                    <li>Rest Balance : 300 USD </li>
-                    <li>Pending Balance : 200 USD</li>
+                    <li>{{ 'رصيد الحساب' }} : 1220 USD </li>
+                    <li>{{ 'طلب السحب' }} : 233 USD</li>
+                    <li>{{ 'المتبقي من الرصيد' }} : 300 USD </li>
+                    <li>{{ 'الرصيد المحظور' }} : 200 USD</li>
                 </ul>
                 <!-- /.row -->
             </div>

@@ -36,10 +36,10 @@ class WithdrawsDataTable extends DataTable
                 return $row->status_text ?? null;
             })
             ->addColumn('action', function($row){
-                $links =  '<a class="btn btn-info btn-sm action-datatable-btn" href="'.url('admin/withdraws/'.$row->id).'"> Details</a>';
+                $links =  '<a class="btn btn-info btn-sm action-datatable-btn" href="'.url('admin/withdraws/'.$row->id).'"> تفاصيل الطلب</a>';
                 if($row->status == 0){
-                    $links .= ' <a class="btn btn-danger btn-sm action-datatable-btn" href="'.url('admin/update-withdraw-status/'.$row->id.'/2').'"> cancel</a>
-                    <a class="btn btn-success btn-sm action-datatable-btn" href="'.url('admin/update-withdraw-status/'.$row->id.'/1').'"> accept</a>
+                    $links .= ' <a class="btn btn-danger btn-sm action-datatable-btn" href="'.url('admin/update-withdraw-status/'.$row->id.'/2').'"> الفاء الطلب</a>
+                    <a class="btn btn-success btn-sm action-datatable-btn" href="'.url('admin/update-withdraw-status/'.$row->id.'/1').'"> موافقة على الطلب</a>
                     ';
                 }
 
@@ -73,11 +73,10 @@ class WithdrawsDataTable extends DataTable
                     ->dom('Bfrtip')
                     ->orderBy(1)
                     ->buttons(
-                        Button::make('create'),
-                        Button::make('export'),
-                        Button::make('print'),
-                        Button::make('reset'),
-                        Button::make('reload')
+                        Button::make('export')->text('تصدير جدول'),
+                        Button::make('print')->text('طباعة الجدول'),
+                        Button::make('reset')->text('اعادة تحميل الجدول'),
+                        'colvis'
                     );
     }
 
@@ -89,14 +88,14 @@ class WithdrawsDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            Column::make('id'),
-            Column::make('user_name'),
-            Column::make('account_email'),
-            Column::make('withdraw_value'),
-            Column::make('withdraw_away'),
-            Column::make('withdraw_status'),
-            Column::make('created_at'),
-            Column::computed('action')
+            Column::make('id')->title('رقم'),
+            Column::make('user_name')->title('اسم المستخدم'),
+            Column::make('account_email')->title('البريد الالكترونى'),
+            Column::make('withdraw_value')->title('قيمة المسحوب'),
+            Column::make('withdraw_away')->title('طريقة السحب'),
+            Column::make('withdraw_status')->title('حالة السحب'),
+            Column::make('created_at')->title('تاريخ الانشاء'),
+            Column::computed('action')->title('')
                   ->exportable(false)
                   ->printable(false)
                   ->width(200)

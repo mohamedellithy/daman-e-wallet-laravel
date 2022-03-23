@@ -31,10 +31,10 @@ class ChargeWalletOrderDataTable extends DataTable
             return $row->status_text ?? null;
         })
         ->addColumn('action', function($row){
-            $links =  '<a class="btn btn-info btn-sm action-datatable-btn" href="'.url('admin/charge-wallets/'.$row->id).'"> Details</a>';
+            $links =  '<a class="btn btn-info btn-sm action-datatable-btn" href="'.url('admin/charge-wallets/'.$row->id).'"> تفاصيل الطلب</a>';
             if($row->status == 0){
-                $links .= ' <a class="btn btn-danger btn-sm action-datatable-btn" href="'.url('admin/update-charge-wallet-status/'.$row->id.'/2').'"> cancel</a>
-                <a class="btn btn-success btn-sm action-datatable-btn" href="'.url('admin/update-charge-wallet-status/'.$row->id.'/1').'"> accept</a>
+                $links .= ' <a class="btn btn-danger btn-sm action-datatable-btn" href="'.url('admin/update-charge-wallet-status/'.$row->id.'/2').'"> الغاء</a>
+                <a class="btn btn-success btn-sm action-datatable-btn" href="'.url('admin/update-charge-wallet-status/'.$row->id.'/1').'"> موافقة</a>
                 ';
             }
 
@@ -68,11 +68,10 @@ class ChargeWalletOrderDataTable extends DataTable
                     ->dom('Bfrtip')
                     ->orderBy(1)
                     ->buttons(
-                        Button::make('create'),
-                        Button::make('export'),
-                        Button::make('print'),
-                        Button::make('reset'),
-                        Button::make('reload')
+                        Button::make('export')->text('تصدير جدول'),
+                        Button::make('print')->text('طباعة الجدول'),
+                        Button::make('reset')->text('اعادة تحميل الجدول'),
+                        'colvis'
                     );
     }
 
@@ -84,15 +83,15 @@ class ChargeWalletOrderDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            Column::make('id'),
-            Column::make('user_name'),
-            Column::make('withdraw_value'),
-            Column::make('withdraw_status'),
-            Column::make('created_at'),
-            Column::computed('action')
+            Column::make('id')->title('رقم'),
+            Column::make('user_name')->title('اسم المستخدم'),
+            Column::make('withdraw_value')->title('قيمة السحب'),
+            Column::make('withdraw_status')->title('حالة طلب السحب'),
+            Column::make('created_at')->title('تاريخ الانشاء'),
+            Column::computed('action')->title('')
                   ->exportable(false)
                   ->printable(false)
-                  ->width(200)
+                  ->width(260)
                   ->addClass('text-center')
         ];
     }

@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('content_header')
-    <h1>Users</h1>
+    <h1>عرض المستخدمين</h1>
 @stop
 @section('content_page')
     <div class="col-sm-12 col-md-12">
