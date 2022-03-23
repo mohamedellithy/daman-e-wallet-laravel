@@ -1,9 +1,10 @@
-@extends('layouts.app')
+@extends('auth.master')
+@section('header')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+@endsection
+@section('form_auth')
+    <div class="row">
+        <div class="col-sm-6">
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
@@ -14,7 +15,7 @@
                         <input type="hidden" name="token" value="{{ $token }}">
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('master.email') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
@@ -59,6 +60,9 @@
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-responsive" src="{{ asset('template/img/e-wallet.jpg') }}" />
         </div>
     </div>
 </div>

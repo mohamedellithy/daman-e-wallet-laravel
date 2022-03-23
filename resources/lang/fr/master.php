@@ -142,4 +142,6 @@ return [
     'add_replay'  => 'ajouter une rediffusion',
     'Amount'      => 'Montant',
     'Other_Details' => 'Autres détails',
+    'reset_password' => 'Réinitialisation du mot de passe',
+    'Send_Password_Reset_Link' => 'Envoyer le lien de réinitialisation du mot de passe',
 ];

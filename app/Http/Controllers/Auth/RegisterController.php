@@ -43,7 +43,7 @@ class RegisterController extends Controller
 
     public function showRegistrationForm(){
         $type = 'signUp';
-        return view('auth.master',compact('type'));
+        return view('auth.register',compact('type'));
     }
 
     public function redirectTo(){

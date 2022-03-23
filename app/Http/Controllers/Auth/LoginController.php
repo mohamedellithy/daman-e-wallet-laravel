@@ -41,7 +41,7 @@ class LoginController extends Controller
     public function showLoginForm(){
         # set type of form to show
         $type = 'signIn';
-        return view('auth.master',compact('type'));
+        return view('auth.register',compact('type'));
     }
 
     public function redirectTo(){

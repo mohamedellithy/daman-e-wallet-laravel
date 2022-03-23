@@ -141,5 +141,7 @@ return [
     'add_replay'  => 'اضافة رد',
     'Amount'      => 'المبلغ المدفوع',
     'Other_Details' => 'تفاصيل أخري',
+    'reset_password' => 'اعادة تعيين كلمة المرور',
+    'Send_Password_Reset_Link' => 'ارسال رابط اعادة تعين كلمة المرور',
 
 ];

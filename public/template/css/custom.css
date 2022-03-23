@@ -402,6 +402,26 @@ form .btn-default-yellow-fill {
     padding: 3px;
 }
 
+.heading-password {
+    text-align: center;
+    line-height: 2em;
+    color: #ff5d8e;
+}
+
+.content-password {
+    padding: 92px 34px;
+}
+
+.btn-submit-form {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.email-password {
+    text-align: right !important;
+}
+
 @media (max-width: 767px) {
     .nav-menu .main-menu .menu-item>a {
         font-size: 15px;
@@ -446,5 +466,8 @@ form .btn-default-yellow-fill {
     }
     .menu-wrap.mobile {
         background: #15212a;
+    }
+    .content-password {
+        padding: auto !important;
     }
 }
