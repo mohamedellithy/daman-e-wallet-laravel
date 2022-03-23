@@ -17,23 +17,23 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label><i class="fas fa-user-tie"></i></label>
-                                    <input id="name" type="text" v-model="field.title"  placeholder="Ticket Title Complaint" required="">
+                                    <input id="name" type="text" v-model="field.title"  :placeholder="__('master.Ticket_Title_Complaint')" required="">
                                 </div>
 
                                 <div class="col-md-6">
                                     <label><i class="fas fa-envelope"></i></label>
-                                    <input id="email" type="email" v-model="field.email"  placeholder="Your Email " required="">
+                                    <input id="email" type="email" v-model="field.email"  :placeholder="__('master.Your_Email')" required="">
                                 </div>
 
                                 <div class="col-md-12">
                                     <div class="form-group mt-4">
-                                        <textarea id="message" v-model="field.ticket" class="form-control" rows="5" placeholder="Description of Complaint"></textarea>
+                                        <textarea id="message" v-model="field.ticket" class="form-control" rows="5" :placeholder="__('master.Description_of_Complaint')"></textarea>
                                     </div>
                                 </div>
 
 
                                 <div class="col-md-12 text-right">
-                                    <button type="submit" value="Submit" class="btn btn-default-yellow-fill mr-3 submit-order">Add Replay</button>
+                                    <button type="submit" value="Submit" class="btn btn-default-yellow-fill mr-3 submit-order">{{ __('master.add_replay') }}</button>
                                 </div>
 
                             </div>
@@ -56,13 +56,13 @@
             <div class="col-md-4 col-xs-12">
                 <div class="order-payment">
                     <ul class="payments-details">
-                        <li class="list-order-list"><h4>Datails Payment Order</h4></li>
-                        <li class="list-order-list">Payer    :{{payment.payer_id}}</li>
-                        <li class="list-order-list">Payee    :{{payment.payee_email}}</li>
-                        <li class="list-order-list">Amount   :{{payment.value}} {{ payment.currency }}</li>
-                        <li class="list-order-list">Status   :{{payment.status_text}}</li>
-                        <li class="list-order-list">Date     :{{payment.created_at}}</li>
-                        <li class="list-order-list"><a :href="`/payments/${payment.id}`" class="payments-id"> Other Details </a></li>
+                        <li class="list-order-list"><h4>{{ __('master.Payments_Details') }}</h4></li>
+                        <li class="list-order-list"><label>{{ __('master.Payer') }} </label>   :{{payment.payer_id}}</li>
+                        <li class="list-order-list"><label>{{ __('master.Payee') }} </label>    :{{payment.payee_email}}</li>
+                        <li class="list-order-list"><label>{{__('master.Amount') }} </label>   :{{payment.value}} {{ payment.currency }}</li>
+                        <li class="list-order-list"><label>{{ __('master.order_status') }} </label>   :{{payment.status_text}}</li>
+                        <li class="list-order-list"><label>{{ __('master.date') }} </label>     :{{payment.created_at}}</li>
+                        <li class="list-order-list"><a :href="`/payments/${payment.id}`" class="payments-id"> {{ __('master.Other_Details') }} </a></li>
                     </ul>
                 </div>
             </div>
@@ -171,5 +171,9 @@ ul.tickets .list-ticket .ticket-text{
     background-color: #00838f;
     padding: 10px;
     color: white;
+}
+.list-order-list label{
+    font-size: 12px;
+    font-weight: bold;
 }
 </style>

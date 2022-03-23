@@ -138,5 +138,8 @@ return [
     'Show_tickets'=>'عرض التذاكر',
     'Close_Ticket'=>'غلق التذكرة',
     'order_number' => 'رقم الطلب',
+    'add_replay'  => 'اضافة رد',
+    'Amount'      => 'المبلغ المدفوع',
+    'Other_Details' => 'تفاصيل أخري',
 
 ];

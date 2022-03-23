@@ -130,6 +130,20 @@ body {
     padding: 3px 0px;
 }
 
+.order-payment .payments-details {
+    border-left: 2px solid #eee;
+    border-right: none !important;
+}
+
+ 
+.order-payment .payments-details {
+    text-align: left !important;
+} 
+
+ul.tickets .list-ticket {
+    text-align: left !important;
+}
+
 @media (max-width: 767px) {
     button.alert-model-payments {
         margin: 15px 28px;

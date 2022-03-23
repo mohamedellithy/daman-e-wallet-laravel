@@ -138,5 +138,8 @@ return [
     'email'=>'email',
     'Show_tickets'=>'Afficher les billets',
     'Close_Ticket'=>'Fermer le ticket',
-    'order_number' => 'numéro de commande'
+    'order_number' => 'numéro de commande',
+    'add_replay'  => 'ajouter une rediffusion',
+    'Amount'      => 'Montant',
+    'Other_Details' => 'Autres détails',
 ];
