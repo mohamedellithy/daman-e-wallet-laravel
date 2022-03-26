@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('page_title')</title>
     <meta name="description" content="">
+    <script  src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{asset('template/img/favicon.ico') }}" rel="shortcut icon">
     @yield('pre_style')
     <!-- Fonts -->
@@ -110,7 +111,7 @@
         window.fallback_locale = "{{ config('app.fallback_locale') }}";
     </script>
 
-    <script  src="{{ asset('js/app.js') }}"></script>
-    
+
+
     </body>
   </html>

@@ -3,20 +3,20 @@
 
 @endsection
 @section('form_auth')
-    
+
         <div class="randomline">
             <div class="bigline"></div>
             <div class="smallline"></div>
         </div>
         <h3>{{ __('master.login_or_create_account') }}</h3>
         <p class="mb-5">{{ __('master.login_register_description') }}</p>
-        <div class="tabs-header btn-select-customer">
-            <ul class="btn-group btn-group-toggle" data-toggle="buttons">
+        <div class="tabs-header">
+            <ul class="btn-group">
                 <li class="btn btn-secondary {{ $type == 'signIn'?'active':'' }} mb-2">
-                    <input type="radio" name="options" id="option1" checked> {{ __('master.login') }}
+                    <a href="{{ route('login') }}"> {{ __('master.login') }}</a>
                 </li>
                 <li class="btn btn-secondary {{ $type == 'signUp'?'active':'' }}">
-                    <input type="radio" name="options" id="option2"> {{ __('master.register') }}
+                    <a href="{{ route('register') }}"> {{ __('master.register') }}</a>
                 </li>
             </ul>
         </div>
@@ -29,8 +29,8 @@
                 <img class="img-responsive" src="{{ asset('template/img/e-wallet.jpg') }}" />
             </div>
         </div>
-    
-       
+
+
 @endsection
 
 @section('custom_style')

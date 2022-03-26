@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadWindowSettings();
     loadWindowEvents();
     loadMenu();
-    loadTabs();
+    //loadTabs();
     izotope();
     popup();
     accordion();
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     backtotop();
     owldemo();
     isotope();
-    livechat();
+    //livechat();
     contactform();
     popover();
     scrollgoto();
@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
     display();
     switching();
     headerfooter();
-    translate();
+    //translate();
     switchVisible();
 });
 //----------------------------------------------------/
-// SVG Change color style 
+// SVG Change color style
 //----------------------------------------------------/
 $("img.svg")
     .each(function() {
@@ -58,7 +58,7 @@ $("img.svg")
         });
     });
 //----------------------------------------------------/
-// Styleswitch color style 
+// Styleswitch color style
 //----------------------------------------------------/
 (function($) {
     $(document)
@@ -79,7 +79,7 @@ $("img.svg")
     }
 })(jQuery);
 //----------------------------------------------------/
-// Custom VPS - Periodicity 
+// Custom VPS - Periodicity
 //----------------------------------------------------/
 function switchVisible() {
     if (document.getElementById('price-val')) {
