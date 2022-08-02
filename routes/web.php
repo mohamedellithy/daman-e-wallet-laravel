@@ -69,3 +69,5 @@ Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->name('admin')
     Route::get('update-charge-wallet-status/{order}/{status}','ChargeWalletController@charge_wallet_status');
     Route::get('support-tickets/status/{ticket_id}/{status}','TicketSupportController@change_status_ticket');
 });
+
+

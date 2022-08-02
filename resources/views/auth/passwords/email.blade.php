@@ -14,12 +14,12 @@
             <form method="POST" action="{{ route('password.email') }}">
                 @csrf
                 <div class="form-group row">
-                    <label for="email" class="col-md-12 col-form-label text-md-right email-password">{{ __('master.email') }}</label>
+                    <label for="phone" class="col-md-12 col-form-label text-md-right email-password">{{ __('master.phone') }}</label>
 
                     <div class="col-md-12">
-                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input id="email" type="phone" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus>
 
-                        @error('email')
+                        @error('phone')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
