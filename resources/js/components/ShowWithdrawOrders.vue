@@ -33,7 +33,7 @@
                                                     <li>#{{ order.id }} </li>
                                                     <li>{{ order.withdraw_type }}</li>
                                                     <li class="email">{{ order.withdraw_account }}</li>
-                                                    <li>{{ order.value }} {{ Currency }}</li>
+                                                    <li>{{ order.value }} {{ currency }}</li>
 
                                                     <li>{{order.status_text}}</li>
                                                 </ul>
@@ -57,7 +57,7 @@
                                                                  <th>{{__('master.Payment_request') }}</th>
                                                             </tr>
                                                             <tr>
-                                                                 <td colspan="3" class="payment-item">{{ order.value }} {{ Currency }}</td>
+                                                                 <td colspan="3" class="payment-item">{{ order.value }} {{ currency }}</td>
                                                             </tr>
 
                                                             <tr class="heading-list">
@@ -182,7 +182,10 @@
 export default {
     props:{
         WithdrawOrders:{},
-        Currency:'USD'
+        currency:{
+            type:String,
+            default: "USD",
+        }
     },
     data(){
         return {

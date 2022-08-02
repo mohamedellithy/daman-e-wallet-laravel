@@ -6,7 +6,7 @@
                     <div class="sec-normal pt-0">
                         <div class="sec-main sec-bg1">
                             <div class="row">
-                                
+
                                 <div class="col-sm-12">
                                     <div class="col-sm-12 title-heading">
                                         <h3 class="section-heading">Update order withdraw</h3>
@@ -82,7 +82,10 @@
 export default {
     props:{
         WithdrawOrder:{},
-        Currency:'USD'
+        currency:{
+            type:String,
+            default: "USD",
+        }
     },
     data(){
         return {

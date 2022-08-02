@@ -19,7 +19,7 @@
 
                 <show-withdraw-orders
                 :withdraw-orders="{{ $withdraw_orders }}"
-                :Currency="{{ Option('app_Currency') }}"
+                currency="{{ Option('app_Currency') }}"
                 ></show-withdraw-orders>
 
             </div>

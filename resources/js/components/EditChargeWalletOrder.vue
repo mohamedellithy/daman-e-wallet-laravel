@@ -6,7 +6,7 @@
                     <div class="sec-normal pt-0">
                         <div class="sec-main sec-bg1">
                             <div class="row">
-                                
+
                                 <div class="col-sm-12">
                                     <div class="col-sm-12 title-heading">
                                         <h3 class="section-heading">Update order charge wallet</h3>
@@ -31,7 +31,7 @@
                                                         <input id="name" type="text" v-model="field.value" placeholder="value withdraw" required="">
                                                     </div>
 
-                                                    
+
 
                                                     <div class="col-md-12">
                                                         <div class="form-group mt-4">
@@ -39,7 +39,7 @@
                                                         </div>
                                                     </div>
 
-                                                    
+
                                                     <div class="col-md-12 text-right">
                                                         <a :href="`/withdraws`" class="mr-3 back-to-order">back to orders</a>
                                                         <button type="submit" value="Submit" class="btn btn-default-yellow-fill mr-3 submit-order">update order</button>
@@ -69,7 +69,10 @@
 export default {
     props:{
         ChargeWalletOrder:{},
-        Currency:'USD'
+        currency:{
+            type:String,
+            default: "USD",
+        }
     },
     data(){
         return {

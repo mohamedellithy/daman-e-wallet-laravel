@@ -19,7 +19,7 @@
 
                 <edit-charge-wallet-order
                 :charge-wallet-order="{{ $charge_order }}"
-                :Currency="{{ Option('app_Currency') }}"
+                currency="{{ Option('app_Currency') }}"
                 ></edit-charge-wallet-order>
 
             </div>

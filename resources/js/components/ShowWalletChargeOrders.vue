@@ -31,7 +31,7 @@
                                             <div class="panel-title">
                                                 <ul :class="[order.status == 2 ? 'canceled':'']">
                                                     <li>#{{ order.id }} </li>
-                                                    <li>{{ order.value }} {{ Currency }}</li>
+                                                    <li>{{ order.value }} {{ currency }}</li>
                                                     <li>{{order.status_text}}</li>
                                                     <li>{{ order.created_at }}</li>
                                                 </ul>
@@ -55,7 +55,7 @@
                                                                  <th>{{__('master.Payment_request') }}</th>
                                                             </tr>
                                                             <tr>
-                                                                 <td colspan="3" class="payment-item">{{ order.value }} {{ Currency }}</td>
+                                                                 <td colspan="3" class="payment-item">{{ order.value }} {{ currency }}</td>
                                                             </tr>
 
                                                             <tr class="heading-list">
@@ -157,7 +157,10 @@
 export default {
     props:{
         ChargeOrders:{},
-        Currency:'USD'
+        currency:{
+            type:String,
+            default: "USD",
+        }
     },
     data(){
         return {
@@ -168,6 +171,8 @@ export default {
         }
     },
     mounted() {
+        console.log('hi mohamed');
+        console.log(this.currency);
         console.log(this.WithdrawOrders);
     },
     methods:{

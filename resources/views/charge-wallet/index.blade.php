@@ -19,7 +19,7 @@
 
                 <show-wallet-charge-orders
                 :charge-orders="{{ $charge_orders }}"
-                :Currency="{{ Option('app_Currency') }}"
+                currency="{{ Option('app_Currency') }}"
                 ></show-wallet-charge-orders>
 
             </div>

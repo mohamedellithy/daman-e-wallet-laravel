@@ -19,7 +19,7 @@
 
                 <edit-withdraw-order
                 :withdraw-order="{{ $withdraw }}"
-                :Currency="{{ Option('app_Currency') }}"
+                currency="{{ Option('app_Currency') }}"
                 ></edit-withdraw-order>
 
             </div>
