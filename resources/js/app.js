@@ -21,8 +21,8 @@ Vue.use(Lang, {
 // we import the vue router from our router/index.js file
 import router from './router';
 
-axios.defaults.baseURL = 'http://e-wallet.test/';
-//axios.defaults.baseURL = 'http://daman.shop/';
+//axios.defaults.baseURL = 'http://e-wallet.test/';
+axios.defaults.baseURL = 'http://daman.shop/';
 Vue.use(VueAxios, axios);
 
 
