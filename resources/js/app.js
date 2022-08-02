@@ -22,7 +22,7 @@ Vue.use(Lang, {
 import router from './router';
 
 //axios.defaults.baseURL = 'http://e-wallet.test/';
-axios.defaults.baseURL = 'http://daman.shop/';
+axios.defaults.baseURL = 'https://daman.shop/';
 Vue.use(VueAxios, axios);
 
 
