@@ -24,7 +24,7 @@
     <!-- ***** NAV MENU ****** -->
     <div class="menu-wrap">
         <div class="nav-menu">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-2 col-md-2">
                         <a href="index">

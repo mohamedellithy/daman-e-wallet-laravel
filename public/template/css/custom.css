@@ -422,6 +422,12 @@ form .btn-default-yellow-fill {
     text-align: right !important;
 }
 
+@media(min-width:900px) {
+    .nav-menu {
+        padding: 7px 30px;
+    }
+}
+
 @media (max-width: 767px) {
     .nav-menu .main-menu .menu-item>a {
         font-size: 15px;
